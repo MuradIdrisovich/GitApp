@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
-import { BrowserRouter, Switch, Redirect } from 'react-router-dom';
+import { HashRouter, Switch, Redirect } from 'react-router-dom';
 import { Route } from 'react-router'
 import Main from './main/Main';
 import Card from './card/card';
@@ -11,7 +11,7 @@ function App() {
     const dispatch = useDispatch();
     
     return (
-        <BrowserRouter>                               
+        <HashRouter>                               
             <div className="container">
                 <Switch>
                     <Route exact path='/' component={Main}/>
@@ -20,7 +20,7 @@ function App() {
                     <Redirect to='/'/> 
                 </Switch>
             </div>
-        </BrowserRouter>
+        </HashRouter>
     )
 }
 
