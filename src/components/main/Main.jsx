@@ -56,8 +56,7 @@ function Main() {
     // if(isFetchError){
     //     return <Redirect to='/error'/>
     // }
-    const sortPosts = (sort) => {
-        console.log(sort)   
+    const sortPosts = (sort) => { 
         setSelectedSort(sort)       
         dispatch(setSortRepos(sort))
     }
@@ -65,7 +64,6 @@ function Main() {
         setSelectedPages(value)       
         dispatch(setPerPage(value))
     }
-    console.log(placeholderArr)
 
     return (
         <div>

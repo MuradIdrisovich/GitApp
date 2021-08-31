@@ -12,8 +12,6 @@ function Card(props) {
     const [contributors, setContributors] = useState([])
     const isFetching = useSelector(state => state.repos.isFetching);
 
-    // console.log(username,reponame);
-
     const dispatch = useDispatch();
 
     useEffect(() =>{
