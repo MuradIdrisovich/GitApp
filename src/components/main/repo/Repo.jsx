@@ -2,8 +2,8 @@ import React from 'react'
 import { NavLink } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
-
 import './repo.less';
+
 
 function Repo(props) {
     const repo = props.repo
